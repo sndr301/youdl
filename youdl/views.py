@@ -11,7 +11,7 @@ class GetUrl(views.APIView):
     	content = {}
     	youtube = YoutubeDL()
         you_id = request.data['ID']
-        if len(you_id) == 10:
+        if len(you_id) != 11:
         	return Response(status=404)
         you_url = "http://youtube.com/watch?v=" + you_id
         try:
