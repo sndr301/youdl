@@ -10,7 +10,7 @@ class GetUrl(views.APIView):
     def post(self, request, *args, **kwargs):
     	content = {}
     	youtube = YoutubeDL()
-        you_id = request.data['ID']
+        you_id = request.data['url']
         try:
             info = youtube.extract_info(you_id, download=False)
         except:
