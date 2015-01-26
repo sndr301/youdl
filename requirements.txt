@@ -11,4 +11,4 @@ stevedore==0.15
 virtualenv==1.11.6
 virtualenvwrapper==4.2
 wsgiref==0.1.2
-youtube-dl==2015.01.23.4
+git+https://github.com/rg3/youtube-dl.git
